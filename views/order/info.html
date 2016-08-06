@@ -110,7 +110,7 @@
               <h5>你的订单已经取消</h5>
             </div>
           </div>
-        </div> --> </div> </div> <div class="order-status-panel"> <div class="before-receive container"> <div class="row order-status-bar"> <div class="col-md-3 col-xs-2"> <p class="order-status-clock"> <i class="fa fa-clock-o"></i> </p> </div> <div class="col-md-9 col-xs-10"> <p class="arrival-time"><span>{{showArrivalText(order)}}</span>&nbsp;<span ng-show="showArrivalTime(order)">{{order.createdAt | ios:'arrival'}}</span></p> <p> <button class="btn btn-color-crystal-green" ng-show="showPay(order)" ng-click="pay(order)">支付 </button> <button class="btn btn-color-crystal-red disabled" ng-show="!showPay(order)">已完成 </button> <!--<button class="btn btn-color-red" ng-show="showAcceptance(order)" ng-click="updateState(order, 'RECEIVED')">
+        </div> --> </div> </div> <div class="order-status-panel"> <div class="before-receive container"> <div class="row order-status-bar"> <div class="col-md-3 col-xs-2"> <p class="order-status-clock"> <i class="fa fa-clock-o"></i> </p> </div> <div class="col-md-9 col-xs-10"> <!--<p class="arrival-time"><span>{{showArrivalText(order)}}</span>&nbsp;<span ng-show="showArrivalTime(order)">{{order.createdAt | ios:'arrival'}}</span></p>--> <p> <button class="btn btn-color-crystal-green" ng-show="showPay(order)" ng-click="pay(order)">支付 </button> <button class="btn btn-color-crystal-red disabled" ng-show="!showPay(order)">已完成 </button> <!--<button class="btn btn-color-red" ng-show="showAcceptance(order)" ng-click="updateState(order, 'RECEIVED')">
                 确认收货
               </button>--> <!--<button class="btn " ng-show="false && showAccelerator(order)">
                 催单
