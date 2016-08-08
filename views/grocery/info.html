@@ -12,6 +12,13 @@
         更多微信课程即将开放...
       </div>
     </div>
-  </div>--> <div ng-show="profiled" class="grocery-profile"> <ul class="list-group"> <li class="list-group-item"><span>门店名称</span>{{grocery.name}}</li> <li class="list-group-item"><span>门店Logo</span><img src="{{grocery.logo}}" class="logo"></li> <li class="list-group-item"><span>地址</span>{{grocery.address}}</li> <li class="list-group-item"><span>联系电话</span>{{grocery.phone}}</li> <li class="list-group-item"><span>营业时间</span>{{grocery.start_time}} - {{grocery.end_time}}</li> <li class="list-group-item"><span>配送支持</span>{{grocery.delivery ? '是' : '否'}}</li> <li class="list-group-item" ng-show="grocery.delivery"><span>配送范围</span>{{grocery.delivery_distance | delivery}} </li> <li class="list-group-item" ng-show="grocery.delivery"><span>配送费用</span>{{grocery.delivery_fee | currency}} </li> <li class="list-group-item" ng-show="grocery.delivery"><span>起送价</span>{{grocery.delivery_limit | currency}} </li> </ul> </div> <div ng-show="comments" class="grocery-comments"> <div class="alert grocery-not-found"> <p><i class="fa fa-comments"></i></p> <p class="note"> 暂无评论！ </p> </div> </div> </div> <grocery-cart ng-show="fetched && infoList"></grocery-cart> <!--
+  </div>--> <div ng-show="profiled" class="grocery-profile"> <ul class="list-group"> <li class="list-group-item"><span>机构名称</span>{{grocery.name}}</li> <li class="list-group-item"><span>Logo</span><img src="{{grocery.logo}}" class="logo"></li> <li class="list-group-item"><span>地址</span>{{grocery.address}}</li> <li class="list-group-item"><span>联系电话</span>{{grocery.phone}}</li> <!--<li class="list-group-item"><span>营业时间</span>{{grocery.start_time}} - {{grocery.end_time}}</li>
+      <li class="list-group-item"><span>配送支持</span>{{grocery.delivery ? '是' : '否'}}</li>
+      <li class="list-group-item" ng-show="grocery.delivery"><span>配送范围</span>{{grocery.delivery_distance | delivery}}
+      </li>
+      <li class="list-group-item" ng-show="grocery.delivery"><span>配送费用</span>{{grocery.delivery_fee | currency}}
+      </li>
+      <li class="list-group-item" ng-show="grocery.delivery"><span>起送价</span>{{grocery.delivery_limit | currency}}
+      </li>--> </ul> </div> <div ng-show="comments" class="grocery-comments"> <div class="alert grocery-not-found"> <p><i class="fa fa-comments"></i></p> <p class="note"> 暂无评论！ </p> </div> </div> </div> <grocery-cart ng-show="fetched && infoList"></grocery-cart> <!--
 <div ng-include src="'views/cart/bar.html'" ng-show="fetched && infoList"></div>
 --> <div ng-include src="'views/footer.html'" ng-show="fetched && !infoList"></div> <div ng-include src="'views/modal.html'"></div>
